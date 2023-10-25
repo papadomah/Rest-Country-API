@@ -121,6 +121,7 @@ function App() {
           path="/"
           element={
             <div className="app_body">
+              
               <div className="inputs">
                 <div className={`search_input ${darkMode ? 'darkMode' : ''}`}>
                   <SearchIcon />

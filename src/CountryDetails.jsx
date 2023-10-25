@@ -101,13 +101,13 @@ function CountryDetails({ darkMode, countries, refetch }) {
           </div>
           
 
-          <div className="border_countries">
+          <div className="border_country">
         <p>Border Countries:</p>
         {borders.length ? (
           borders.map((border) => (
-            <div
+            <div 
               key={border}
-              className={`border_country ${darkMode ? 'darkMode' : ''}`}
+              className={`border_countries ${darkMode ? 'darkMode' : ''}`}
               onClick={() => {
                 refetch();
                 navigate(`/${border}`);
