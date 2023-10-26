@@ -21,15 +21,18 @@
   background-color: var(--light-mode-bg);
   min-height: 100vh;
   height: 100%;
+ 
 }
+
 .app.darkMode {
   background-color: var(--dark-mode-bg);
   color: white;
 }
-.app_body{
+.app_body.darkMode{
   margin: 15px auto 0;
-  padding: 15px;
-  max-width: 1440px;
+  /* padding: 15px; */
+  /* max-width: 1440px; */
+  /* max-height: 100%; */
   
 }
 .header{
@@ -65,6 +68,8 @@
 
 
 }
+
+
 
 .switch_mode{
   display: flex;
@@ -159,7 +164,6 @@ input[type="text"]{
      
 .countries{
   max-width: 1440px;
-  height: 336px;
   padding: 15px;
   display: flex;
   justify-content: center;
@@ -259,7 +263,9 @@ input[type="text"]{
   
   
   
+  
 }
+
 .info .country_details_name{
   font-weight: bold;
   
@@ -285,6 +291,9 @@ input[type="text"]{
   margin: 0;
   
 }
+body{
+margin: 0;
+}
 
 .info.darkMode {
   color: white;
@@ -294,7 +303,7 @@ input[type="text"]{
   justify-content: space-between;
   align-items: center;
   margin-bottom: 35px;
-  width: 500px;
+  /* width: 500px; */
   padding: 0px 0px 0px 0px; /* top, right, bottom, left */
   margin: 0px 0px 0px 0px;
   
@@ -326,10 +335,11 @@ input[type="text"]{
 }
 
 
-@media (max-width: 375px) {
+@media screen and (min-width: 320px ) and (max-width: 480px) {
   .header_container{
-    padding-left: 4px;
+    padding-left:4px;
     padding-right: 4px;
+    
   }
   .logo {
 font-size: 12px;
@@ -338,7 +348,9 @@ font-size: 12px;
     font-size: 12px;
   }
   .inputs{
-    padding: 0px 15px 0px 15px;
+    padding: 0px 65px 0px 62px;
+    
+    
   }
 
   .search_input{     
@@ -359,8 +371,9 @@ font-size: 12px;
 
   .country_details{
     flex-direction: column;  
-    
+    /* margin: 0; */
   }
+
   .info_container {
     flex-direction: column;
     align-items: flex-start;
