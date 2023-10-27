@@ -290,11 +290,16 @@
 }
 .info_container{
   margin: 0;
+
   
 }
 .left_info{
   margin: 0;
   
+}
+.right_info{
+
+  margin-right: 90px;
 }
 body{
 margin: 0;
